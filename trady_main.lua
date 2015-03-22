@@ -85,7 +85,7 @@ function Initialize( Plugin )
 	PluginManager = cRoot:Get():GetPluginManager()
 	COINY = PluginManager:GetPlugin( "Coiny" )
 	HANDY = cRoot:Get():GetPluginManager():GetPlugin( "Handy" )
-	local properHandy = HANDY:Call( "CheckForRequiedVersion", HandyRequiredVersion )
+	local properHandy = HANDY:Call( "CheckForRequiredVersion", HandyRequiredVersion )
 	if( not properHandy ) then
 		LOGERROR( PLUGIN:GetName().." v"..PLUGIN:GetVersion().." needs Handy v"..HandyRequiredVersion..", shutting down" )
 		return false
